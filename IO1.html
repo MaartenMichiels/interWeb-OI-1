@@ -17,6 +17,7 @@
                   </div>
                   <div class="alert alert-success" role="alert" id="confirmAlert">
                     <h4>geslaagd!</h4>
+                    <p>je info is verstuurd!</p>
                   </div>
                   <div class="alert alert-primary" role="alert" id="paymentAlert">
                     <h4>betalingswijze</h4>
@@ -54,23 +55,25 @@
                   <div class="row g-3">
                     <div class="col-sm-6">
                       <label for="wachtwoord" class="form-label">wachtwoord</label>
-                      <input type="text" class="form-control" id="wachtwoord" placeholder="" value="" >
+                      <input type="password" class="form-control" id="wachtwoord" placeholder="" value="" >
                     </div>
         
                     <div class="col-sm-6">
                       <label for="herhaal" class="form-label">herhaal wachtwoord</label>
-                      <input type="text" class="form-control" id="herhaalwachtwoord" placeholder="" value="" >
+                      <input type="password" class="form-control" id="herhaalwachtwoord" placeholder="" value="" >
                     </div>
         
                   <div class="col-12">
                     <label for="Adres" class="form-label">Adres</label>
-                    <input type="text" class="form-control" id="Adres" placeholder="1234 Main St">
+                    <input type="text" class="form-control" id="Adres" placeholder="Mottigdorpigem 55">
                   </div>
                   <div class="col-5">
                     <label for="land" class="form-label">Land</label>
                     <select class="form-select" id="land" >
                       <option value="">kies een land</option>
                       <option>United States</option>
+                      <option>Frankrijk</option>
+                      <option>België</option>
                     </select>
                   </div>      
                   <div class="col-4">
@@ -78,14 +81,17 @@
                     <select class="form-select" id="provincie" >
                       <option value="">kies een provincie</option>
                       <option>California</option>
+                      <option>Normandië</option>
+                      <option>Antwerpen</option>
                     </select>
                   </div>
-      
+                  <!-- op de preview van de opdracht staat postcode als een dropdown aangegeven ik denk dat dat niet zo bedoeld was
+                       just in case heb ik dit toch zo gemaakt en alle checks verlopen zoals ze bij een textbox ook doen-->
                   <div class="col-3">
                     <label for="postcode" class="form-label">Postcode</label>
                     <select class="form-select" id="postcode" >
                       <option value="">...</option>
-                      <option>2100</option>
+                      <option>101</option>
                       <option>2200</option>
                       <option>2300</option>
                       <option>2500</option>
@@ -109,22 +115,26 @@
                 <div class="col-6 p-3">
                     <h4 class="mb-3">Betaling</h4>
                     <div class="form-check">
-                      <input id="credit" name="paymentMethod" type="radio" class="form-check-input paymentMethod" checked="">
-                      <label class="form-check-label" for="credit">Credit card</label>
+                        <input id="bankapp" name="paymentMethod" type="radio" class="form-check-input paymentMethod" value="bankapp" checked="">
+                        <label class="form-check-label" for="bankapp">Bank App</label>
+                      </div>
+                    <div class="form-check">
+                      <input id="visa" name="paymentMethod" type="radio" class="form-check-input paymentMethod" value="visa" >
+                      <label class="form-check-label" for="visa">visa</label>
                     </div>
                     <div class="form-check">
-                      <input id="debit" name="paymentMethod" type="radio" class="form-check-input paymentMethod">
-                      <label class="form-check-label" for="debit">Debit card</label>
+                      <input id="overschrijving" name="paymentMethod" type="radio" class="form-check-input paymentMethod" value="overschrijving">
+                      <label class="form-check-label" for="overschrijving">overschrijving</label>
                     </div>
                     <div class="form-check">
-                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input paymentMethod">
+                      <input id="paypal" name="paymentMethod" type="radio" class="form-check-input paymentMethod" value="paypal">
                       <label class="form-check-label" for="paypal">PayPal</label>
                     </div>
                   </div>
                 </div>
                 <hr class="my-4">
       
-                <button class="w-100 btn btn-primary btn-lg btnsub" type="submit">Continue to checkout</button>
+                <button class="w-100 btn btn-primary btn-lg btnsub" type="submit">Feed the database!</button>
               </form>
             </div>
           </div>
