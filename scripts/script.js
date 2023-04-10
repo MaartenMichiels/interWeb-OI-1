@@ -74,9 +74,9 @@ const errorAlert = document.querySelector("#errorAlert")
 const confirmAlert = document.querySelector("#confirmAlert")
 const paymentAlert = document.querySelector("#paymentAlert")
 
-// HideUIElement(errorAlert)
-// HideUIElement(confirmAlert)
-// HideUIElement(paymentAlert)
+ HideUIElement(errorAlert)
+ HideUIElement(confirmAlert)
+ HideUIElement(paymentAlert)
 
 //form declareren
 const form = document.querySelector("#forma")
